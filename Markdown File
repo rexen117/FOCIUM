@@ -1,0 +1,43 @@
+# FOCIUM
+
+**Focium** is a next-generation AI-powered productivity app designed to help users focus, track performance, and enter a state of deep flow. With a reactive 3D liquid orb, immersive space-themed UI, and real-time AI voice assistant, Focium transforms focus into an interactive, evolving experience.
+
+---
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Folder Structure](#folder-structure)
+5. [Getting Started](#getting-started)
+6. [Contributing](#contributing)
+7. [License](#license)
+
+---
+
+## Overview
+Focium merges neuroscience, AI, and immersive design into a single app that motivates users to achieve peak productivity. The core **Focium Orb** reacts to voice commands, session progress, and environmental input, giving a visual, fluid representation of focus levels.
+
+---
+
+## Features
+- **3D Reactive Orb**: Liquid venom/slime-style orb that reacts to AI voice.
+- **AI Voice Assistant**: Natural conversation, guidance, and motivation.
+- **Focus Timer**: Deep Work, Pomodoro, and Custom Modes.
+- **Immersive Space UI**: Neon glow, dynamic backgrounds, pulsing animations.
+- **Analytics Dashboard**: Track sessions, streaks, and Focium Score.
+- **Cross-Platform**: Android & iOS support.
+- **Lifetime Purchase**: No subscriptions; premium features unlocked via one-time purchase.
+
+---
+
+## Tech Stack
+- **Frontend**: Flutter (Android & iOS)
+- **Animation**: Rive, Lottie (orb + micro-interactions)
+- **Backend**: Firebase (Auth, Firestore, Analytics)
+- **Audio**: AAC/OGG chimes, pre-recorded AI voice
+- **Optional**: Unity/Unreal for real-time orb upgrades
+
+---
+
+## Folder Structure
