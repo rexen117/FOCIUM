@@ -1,0 +1,41 @@
+/users/{uid}
+  - displayName: string
+  - email: string
+  - createdAt: timestamp
+  - lastActiveAt: timestamp
+  - orbLevel: number
+  - fociumScoreAvg: number
+  - settings: { voiceMode, theme, audioPref, privacyFlags }
+  - memoryOptIn: boolean
+  - deviceTokens: { tokenId: metadata }    // FCM tokens
+
+/users/{uid}/sessions/{sessionId}
+  - mode: 'pomodoro'|'deep'|'custom'
+  - targetMin: number
+  - startedAt: timestamp
+  - endedAt: timestamp
+  - elapsedSec: number
+  - interruptions: number
+  - distractionEvents: number
+  - fociumScore: number
+  - audioSummaryRef: storage path (optional)
+  - aiNotesRef: string (generated text)
+/users/{uid}/events/{eventId}   // optional event log for analytics
+  - type: 'start'|'pause'|'interrupt'|'ai_response'|'milestone'
+  - timestamp
+  - meta: {}
+
+ /multiplayer/rooms/{roomId}
+  - hostUid
+  - mode
+  - status: 'open'|'active'|'closed'
+  - createdAt
+  - participants: { uid: {joinedAt, lastHeartbeat, ampLevel} }
+  - state: { startAt, elapsed }
+
+ /assets/orbVersions/{versionId}
+  - metadata (visual, unlockRequirements)
+  - assetPath: storage ref
+
+ /analytics/daily/{yyyy-mm-dd}/users/{uid}
+  - aggregated metrics to keep read queries cheap
