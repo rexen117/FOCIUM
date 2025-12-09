@@ -105,7 +105,10 @@ export default function Orb(){
 
   // create geometry once
   const geometry = React.useMemo(()=>{
-    const g = new THREE.IcosahedronGeometry(1.2, 128)
+    // Lower detail for better performance during the hackathon.
+    // Increase the second param if you need more smoothness (e.g. 8 or 16).
+    const g = new THREE.IcosahedronGeometry(1.2, 6)
+    g.computeVertexNormals()
     return g
   }, [])
 
